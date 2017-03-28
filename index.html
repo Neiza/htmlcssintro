@@ -140,11 +140,47 @@
   <h2> FOMULARIOS (esto es h2)</h2>
   El elemento HTML form (<form>) representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web.
 
-Es posible usar las pseudo-clasess de CSS :valid e :invalid  para darle estilos a un elemento form.
-<h3>atributos (es h3)</h3>
+  Es posible usar las pseudo-clasess de CSS :valid e :invalid  para darle estilos a un elemento form.
+  <h3>atributos (es h3)</h3>
 
-<form class=""  id= "">
-    <progress value="20" max="100">20%</progress>
-</form>
+  <form class=""  id= "" action= "" method="">  <!--   action se pone la url sn se almacenaran los datos y METHOD get o post , GET: los datos puestos en el formulario se podrán ver x el usuario y post no para mi es mejor -->
+      <optgroup label="grupo1">
+        <option value="fem">fem</option>
+        <option value="mas">mas</option>
+      </optgroup>
+      <progress value="20" max="100">20%</progress>
+  </form>
+  <br>
+  <p title="The test paragraph">This is a sample of some <b>HTML you might<br>have</b> in your document</p>
+  
+  <a href="index1.html" id="sprint1" target="quiz"><input type="button"  value="Sprint 1" ></a>
+  <a href="index2.html" id="sprint2" target="quiz"><input type="button"  value="Sprint 2" ></a>
+  <a href="index3.html" id="sprint3" target="quiz"><input type="button"  value="Sprint 3" ></a>
+  <div id="printQuiz">
+    <iframe src="" width="950px" height="500px" name="quiz" id="quiz" scrolling ="no" frameborder="0" >No acepta frames</iframe>
+  </div>
+  <div class="">
+    <h2>EVENTOS</h2>
+    <label for="">ONFOCUS Y ONBLUR</label>
+    <input type="text"  value="" onfocus="value='Tengo el focus';style.backgroundColor='yellow';" onblur="value='Perdi el focus';style.backgroundColor='#ddd';">
+    <br>
+    <label for="">ONCLICK location</label>
+    <a href="http://google.com" onclick="alert('Este link te dirige a Google.com')">Google.com</a>
+    <a href="#" onclick="javascript:if(confirm('Este link te dirige a Google.com')) {parent.location='http://google.com'}else{''};">Google</a>
+    <br>
+    <label for="">ONCHANGE</label>
+    <input type="text" value="" onchange="style.backgroundColor='red';">
+    <br>
+    <textarea name="name" rows="8" cols="80" id="estado"></textarea>
+    <input type="button" name="" value="imprimir" id="imprimir">
+  </div>
+  <br>
+  <div id="record">
+
+  </div>
+  <script type="text/javascript" src="assets/js/js.js">
+
+  </script>
+
 </body>
 </html>
